@@ -1,14 +1,14 @@
-# ClipVault Chrome Extension
+# ClipVault — Chrome Extension
 
-A lightweight Chrome extension for saving, storing, and managing text snippets directly in your browser. Built with JavaScript and Chrome Extension Manifest V3.
+A lightweight Chrome extension for saving, storing, and managing text snippets directly in your browser.
 
-ClipVault is a hands-on software development project focused on learning Chrome extension architecture, browser APIs, and practical JavaScript development.
+Built as a hands-on project to learn Chrome extension development using JavaScript and Manifest V3.
 
 ## Overview
 
 ClipVault aims to make it easier to save useful information while browsing the internet and access it whenever needed.
 
-The project is being developed as a simple and practical clipboard manager with persistent local storage and an easy-to-use popup interface.
+The project focuses on building a simple, practical clipboard manager while exploring Chrome extension architecture, browser APIs, and JavaScript development.
 
 ## Current Features
 
