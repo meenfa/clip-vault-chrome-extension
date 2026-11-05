@@ -1,18 +1,32 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>ClipVault</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
-
 <body>
 
-    <h1>ClipVault</h1>
+    <div class="header">
+        <div>
+            <h2>ClipVault</h2>
+            <p class="subtitle">Your saved snippets</p>
+        </div>
+    </div>
 
-    <p>This is my first Chrome extension!</p>
+    <div class="input-section">
+        <input
+            type="text"
+            id="clipInput"
+            placeholder="Write something to save..."
+        >
 
-    <button id="helloBtn">
-        Click Me
-    </button>
+        <button id="saveBtn">+ Save Clip</button>
+    </div>
+
+    <h3>Your Clips</h3>
+
+    <ul id="clipsList"></ul>
 
     <script src="popup.js"></script>
 

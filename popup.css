@@ -1,0 +1,173 @@
+
+/* Base */
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    width: 360px;
+    min-height: 300px;
+    max-height: 560px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #252d27;
+    background: #ffffff;
+}
+
+.header {
+    margin-bottom: 22px;
+}
+
+.header h2 {
+    margin: 0;
+    color: #245c3a;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.subtitle {
+    margin: 3px 0 0;
+    color: #737b75;
+    font-size: 12px;
+}
+
+/* Input section */
+.input-section {
+    margin-bottom: 24px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    margin-bottom: 10px;
+    border: 1px solid #d5ddd6;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #252d27;
+    font: inherit;
+    font-size: 13px;
+    transition: border-color 0.15s ease;
+}
+
+input::placeholder {
+    color: #929a93;
+}
+
+input:focus {
+    outline: none;
+    border-color: #43845a;
+    box-shadow: 0 0 0 2px rgba(67, 132, 90, 0.12);
+}
+
+/* Buttons */
+button {
+    min-height: 36px;
+    padding: 8px 13px;
+    border: 1px solid #28613d;
+    border-radius: 6px;
+    background: #28613d;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+button:hover {
+    background: #1e4e30;
+}
+
+button:focus-visible {
+    outline: 2px solid #43845a;
+    outline-offset: 2px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#saveBtn {
+    width: 100%;
+}
+
+/* Saved clips heading */
+h3 {
+    margin: 0 0 10px;
+    color: #303a32;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Clips list */
+#clipsList {
+    max-height: 300px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#clipsList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 11px 0;
+    border-bottom: 1px solid #e8ece8;
+    color: #343d36;
+    font-size: 13px;
+}
+
+#clipsList li:first-child {
+    border-top: 1px solid #e8ece8;
+}
+
+#clipsList li span {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+}
+
+/* Delete button */
+.delete-btn {
+    flex-shrink: 0;
+    min-height: 30px;
+    padding: 5px 9px;
+    border: 1px solid #dce5dc;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #47704e;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.delete-btn:hover {
+    border-color: #c9d9ca;
+    background: #f0f5ef;
+    color: #245c3a;
+}
+
+/* Scrollbar */
+#clipsList::-webkit-scrollbar {
+    width: 5px;
+}
+
+#clipsList::-webkit-scrollbar-thumb {
+    background: #cbd5cc;
+    border-radius: 5px;
+}
+
+#clipsList::-webkit-scrollbar-track {
+    background: transparent;
+}
