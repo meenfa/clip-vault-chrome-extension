@@ -1,6 +1,7 @@
-const button = document.getElementById("helloBtn")
+const button = document.getElementById("helloBtn");
 
 button.addEventListener("click",()=>{
-    alert("Hello! ClipVault is working")
+    chrome.runtime.sendMessage({
+        message: "Hello Background!"
+    });
 })
-console.log("ClipVault popup is running!");
