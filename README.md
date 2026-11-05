@@ -1,4 +1,4 @@
-# ClipVault — Chrome Extension
+# ClipVault : Chrome Extension
 
 A lightweight Chrome extension for saving, organizing, and managing copied text. Built as a hands-on project to learn Chrome extension development.
 
