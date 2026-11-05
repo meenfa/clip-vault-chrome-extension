@@ -7,26 +7,33 @@
 </head>
 <body>
 
-    <div class="header">
-        <div>
-            <h2>ClipVault</h2>
-            <p class="subtitle">Your saved snippets</p>
-        </div>
-    </div>
+    <header class="header">
+        <h1>ClipVault</h1>
+        <p class="subtitle">Your personal collection of saved text.</p>
+    </header>
 
-    <div class="input-section">
-        <input
-            type="text"
-            id="clipInput"
-            placeholder="Write something to save..."
-        >
+    <main>
+        <section class="input-section">
+            <label for="clipInput">ADD A NEW CLIP</label>
 
-        <button id="saveBtn">+ Save Clip</button>
-    </div>
+            <input
+                type="text"
+                id="clipInput"
+                placeholder="Enter text you want to save..."
+            >
 
-    <h3>Your Clips</h3>
+            <button id="saveBtn">Save clip</button>
+        </section>
 
-    <ul id="clipsList"></ul>
+        <section class="clips-section">
+            <div class="section-heading">
+                <h2>Saved clips</h2>
+                <span class="section-caption">Your collection</span>
+            </div>
+
+            <ul id="clipsList"></ul>
+        </section>
+    </main>
 
     <script src="popup.js"></script>
 

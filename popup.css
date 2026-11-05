@@ -2,88 +2,97 @@
 /* Base */
 * {
     box-sizing: border-box;
-    
 }
 
 body {
     width: 360px;
-    min-height: 300px;
-    max-height: 560px;
+    min-height: 200px;
+    max-height: 520px;
     margin: 0;
     padding: 20px;
-    border-radius: 6px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
-    color: #252d27;
+    color: #29352d;
     background: #ffffff;
 }
 
+/* Header */
 .header {
-    margin-bottom: 22px;
+    padding-bottom: 17px;
+    margin-bottom: 14px;
+   
 }
 
-.header h2 {
+.header h1 {
     margin: 0;
-    color: #245c3a;
-    font-size: 21px;
+    color: #245b38;
+    font-size: 23px;
     font-weight: 700;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.6px;
 }
 
 .subtitle {
     margin: 3px 0 0;
-    color: #737b75;
+    color: #778179;
     font-size: 12px;
 }
 
-/* Input section */
+/* Add clip section */
 .input-section {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 8px;
+    color: #536358;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
 }
 
 input {
     display: block;
     width: 100%;
-    height: 40px;
-    padding: 0 12px;
+    height: 39px;
+    padding: 0 11px;
     margin-bottom: 10px;
-    border: 1px solid #d5ddd6;
-    border-radius: 6px;
+    border: 1px solid #d5ded6;
+    border-radius: 5px;
     background: #ffffff;
-    color: #252d27;
-    font: inherit;
+    color: #29352d;
+    font-family: inherit;
     font-size: 13px;
-    transition: border-color 0.15s ease;
 }
 
 input::placeholder {
-    color: #929a93;
+    color: #929b94;
 }
 
 input:focus {
     outline: none;
     border-color: #43845a;
-    box-shadow: 0 0 0 2px rgba(67, 132, 90, 0.12);
+    box-shadow: 0 0 0 2px rgba(67, 132, 90, 0.10);
 }
 
-/* Buttons */
-button {
-    min-height: 36px;
-    padding: 8px 13px;
+/* Save button */
+#saveBtn {
+    width: 100%;
+    min-height: 37px;
+    padding: 8px 12px;
     border: 1px solid #28613d;
-    border-radius: 6px;
+    border-radius: 5px;
     background: #28613d;
     color: #ffffff;
     font-family: inherit;
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.15s ease;
 }
 
-button:hover {
-    background: #1e4e30;
+#saveBtn:hover {
+    background: #204f32;
 }
 
 button:focus-visible {
@@ -91,26 +100,33 @@ button:focus-visible {
     outline-offset: 2px;
 }
 
-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-#saveBtn {
-    width: 100%;
-}
-
 /* Saved clips heading */
-h3 {
-    margin: 0 0 10px;
-    color: #303a32;
-    font-size: 14px;
-    font-weight: 600;
+.clips-section {
+    margin-top: 4px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #293a2e;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.section-caption {
+    color: #879188;
+    font-size: 11px;
 }
 
 /* Clips list */
 #clipsList {
-    max-height: 300px;
+    max-height: 260px;
     overflow-y: auto;
     list-style: none;
     padding: 0;
@@ -121,15 +137,11 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
-    padding: 11px 0;
-    border-bottom: 1px solid #e8ece8;
-    color: #343d36;
-    font-size: 13px;
-}
-
-#clipsList li:first-child {
+    gap: 10px;
+    padding: 11px 2px;
     border-top: 1px solid #e8ece8;
+    color: #354139;
+    font-size: 13px;
 }
 
 #clipsList li span {
@@ -142,30 +154,31 @@ h3 {
 /* Delete button */
 .delete-btn {
     flex-shrink: 0;
-    min-height: 30px;
-    padding: 5px 9px;
-    border: 1px solid #dce5dc;
-    border-radius: 5px;
+    min-height: 28px;
+    padding: 4px 9px;
+    border: 1px solid #d8e3d9;
+    border-radius: 4px;
     background: #ffffff;
     color: #47704e;
-    font-size: 12px;
+    font-family: inherit;
+    font-size: 11px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .delete-btn:hover {
-    border-color: #c9d9ca;
-    background: #f0f5ef;
-    color: #245c3a;
+    background: #edf4ed;
+    border-color: #c3d6c6;
 }
 
 /* Scrollbar */
 #clipsList::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
 }
 
 #clipsList::-webkit-scrollbar-thumb {
     background: #cbd5cc;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 #clipsList::-webkit-scrollbar-track {

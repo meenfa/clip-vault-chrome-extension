@@ -1,43 +1,50 @@
-# ClipVault : Chrome Extension
+# ClipVault Chrome Extension
 
-A lightweight Chrome extension for saving, organizing, and managing copied text. Built as a hands-on project to learn Chrome extension development.
+A lightweight Chrome extension for saving, storing, and managing text snippets directly in your browser. Built with JavaScript and Chrome Extension Manifest V3.
 
-ClipVault is a hands-on software development project built to explore Learning Chrome Extension Development using JavaScript and Manifest V3.
+ClipVault is a hands-on software development project focused on learning Chrome extension architecture, browser APIs, and practical JavaScript development.
 
 ## Overview
 
-ClipVault aims to make it easier to save useful text while browsing the internet and access it whenever needed.
+ClipVault aims to make it easier to save useful information while browsing the internet and access it whenever needed.
 
-The goal is to develop a simple, clean, and practical clipboard management experience directly inside Google Chrome.
+The project is being developed as a simple and practical clipboard manager with persistent local storage and an easy-to-use popup interface.
 
 ## Current Features
 
-- Chrome extension successfully loads in the browser.
-- Popup interface with a welcome message.
-- Basic button interaction.
-- Background service worker initialization.
+- Chrome extension successfully loads in Google Chrome.
 - Manifest V3 configuration.
+- Popup interface built with HTML, CSS, and JavaScript.
+- Background service worker initialization.
+- Popup-to-background message passing.
+- Save text snippets manually through the popup.
+- Store multiple clips using Chrome Storage API.
+- Retrieve and display previously saved clips.
+- Persistent local storage using `chrome.storage.local`.
+- Delete individual saved clips.
+- Custom popup styling with a green color theme.
 
 ## Planned Features
 
-- Save selected text from webpages.
-- Display clipboard history.
+- Save selected text directly from webpages.
+- Right-click context menu integration (Save to ClipVault).
 - Copy previously saved text.
-- Delete individual entries.
-- Clear clipboard history.
+- Clear all saved clips.
 - Search saved snippets.
-- Organize saved text.
-- Persistent local storage.
+- Organize and manage saved text.
+- Improve the popup interface and user experience.
 
 ## Tech Stack
 
 - JavaScript
-- HTML
-- CSS
+- HTML5
+- CSS3
 - Chrome Extension APIs
+- Chrome Storage API
+- Chrome Runtime Messaging API
 - Manifest V3
 
-Future plans may include React, Vite, and additional technologies as the project evolves.
+Future development may introduce React and Vite for a more advanced user interface.
 
 ## Project Structure
 
@@ -46,6 +53,7 @@ clip-vault/
 │
 ├── manifest.json
 ├── popup.html
+├── popup.css
 ├── popup.js
 ├── background.js
 └── README.md
@@ -59,7 +67,7 @@ clip-vault/
    git clone https://github.com/meenfa/clip-vault-chrome-extension.git
    ```
 
-2. Open the project folder:
+2. Navigate to the project directory:
 
    ```bash
    cd clip-vault-chrome-extension
@@ -72,10 +80,10 @@ clip-vault/
    ```
 
 4. Enable Developer Mode.
-5. Click Load unpacked.
+5. Click **Load unpacked**.
 6. Select the ClipVault project folder.
 
-The extension should now appear in Chrome.
+The extension should now appear in your Chrome extensions list.
 
 ## Learning Objectives
 
@@ -83,19 +91,23 @@ This project is also a learning journey covering:
 
 - Chrome Extension Architecture
 - Manifest V3
-- Popup pages
+- Popup pages and UI development
 - Background service workers
-- Content scripts
+- Extension message passing
 - Chrome Storage API
-- Extension messaging
+- JavaScript asynchronous programming
 - Browser permissions
-- Debugging and testing
+- Debugging and testing Chrome extensions
 
 ## Development Status
 
-**Currently:** Initial extension setup completed.
+**Status: In Development**
 
-The project is under active development. Features will be implemented incrementally as the extension architecture and Chrome APIs are explored.
+The initial extension setup, popup interface, message passing, and basic clipboard management functionality have been implemented.
+
+The next development phase focuses on capturing selected text directly from webpages using content scripts and Chrome's Context Menus API.
+
+Features are being implemented incrementally as part of the learning and development process.
 
 ## License
 
